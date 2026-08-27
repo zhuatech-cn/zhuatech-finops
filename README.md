@@ -66,3 +66,7 @@ Copyright © 2026 上海如静知华信息科技有限公司。
 | ![微信咨询二维码一](docs/images/zhuatech-wechat-consulting.png) | ![微信咨询二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO：云成本与 FinOps 管理平台、FINOPS系统源码、企业数字化、Java企业系统、Vue管理系统、知华科技、上海如静知华信息科技有限公司。
+
+## V2.0 专业云成本域
+
+新增云账号、成本预算、账单明细、预算/异常/标签告警和优化建议模型。账单行支持幂等采集、成本中心分摊和月度预算阈值；成本较基线增长超过 50% 自动告警，优化建议记录预计与实际月节省。专业入口为“云成本控制台”，API 根路径为 `/api/finops-ops`。

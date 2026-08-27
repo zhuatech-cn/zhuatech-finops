@@ -36,3 +36,16 @@
 | `committedCoverage` | double | 承诺覆盖率(%) |
 
 接口统一返回 `ApiResponse`；业务冲突使用 HTTP 409，参数错误使用 400，未认证使用 401，无权限使用 403。
+
+## 专业 FinOps 接口
+
+| 方法 | 路径 | 说明 |
+| --- | --- | --- |
+| GET | `/api/finops-ops/dashboard` | 账号、成本、告警和优化总览 |
+| POST | `/api/finops-ops/accounts` | 登记云账号 |
+| POST | `/api/admin/finops-ops/accounts/{id}/activate` | 启用云账号 |
+| POST | `/api/finops-ops/budgets` | 建立成本中心月度预算 |
+| POST | `/api/finops-ops/accounts/{id}/costs` | 幂等采集云账单并执行告警规则 |
+| POST | `/api/finops-ops/accounts/{id}/recommendations` | 创建优化建议 |
+| POST | `/api/admin/finops-ops/recommendations/{id}/approve` | 批准优化建议 |
+| POST | `/api/finops-ops/recommendations/{id}/realize` | 登记实际优化收益 |
