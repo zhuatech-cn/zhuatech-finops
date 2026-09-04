@@ -53,6 +53,10 @@ cd .. && cp .env.example .env && docker compose up --build
 
 开发演示账号：`admin / admin123`、`operator / operator123`。生产环境必须通过环境变量替换全部默认凭据。
 
+## 云资源承诺采购
+
+新增预留实例、节省计划等长期云资源承诺前的企业授权门禁，统一核对用量基线、需求预测、折扣、预算、锁定风险、可迁移性、财务审批和退出方案。详见[企业云资源承诺采购](docs/ENTERPRISE_CLOUD_COMMITMENT.md)。
+
 ## 许可与商业授权
 
 Copyright © 2026 上海如静知华信息科技有限公司。
