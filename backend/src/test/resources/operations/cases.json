@@ -1,0 +1,54 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "allocatedSharedCost": "#400",
+      "unitTotal": "#500",
+      "untaggedPct": "#4"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "untaggedCost": "51"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "unitWeight": "6"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "totalWeight": "0"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "untaggedCost": "501"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "unitWeight": "0",
+      "directCost": "0",
+      "untaggedCost": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "unitTotal": "#0"
+    },
+    "error": false
+  }
+]
